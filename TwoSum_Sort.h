@@ -53,8 +53,8 @@ public:
         
         vector<NumPair> pairArr;
         for(int i = 0; i < nums.size(); i++){
-            NumPair *p = new NumPair(nums.at(i), i);
-            pairArr.push_back(*p);
+            NumPair p(nums.at(i), i);
+            pairArr.push_back(p);
         }
         sort(pairArr.begin(), pairArr.end(), compare);
         
