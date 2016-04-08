@@ -27,7 +27,9 @@
  671088640
  
  Solution:
- Dynamic Programing. use 3 Queues to store multiples of 2,3,and 5. Every time we pick out the smallest in three queues as X, and use this number as the next ugly number generator. Then we remove the numbers which equals to X in 3 queues. Execute N times and we will get the Nth-Ugly Number.
+ Merge Sort. use 3 Queues to store multiples of 2,3,and 5. Every time we pick out the smallest in three queues as X, and use this number as the next ugly number generator. Then we remove the numbers which equals to X in 3 queues. Execute N times and we will get the Nth-Ugly Number.
+ 
+ Time Complexity: O(n), Space Complexity: O(n)
  
  Notes: try to solve problems by iteratively checking numbers and call isUglyNum will cause a TLE error, even if you use a memo as an optimization.
  */
